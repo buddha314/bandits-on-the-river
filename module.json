@@ -1,7 +1,7 @@
 {
-  "id": "automate-fvtt-pathfinder",
-  "title": "Automate FVTT Pathfinder Starter Content",
-  "description": "Starter Pathfinder crafting and Kingdom Building content for Automate FVTT.",
+  "id": "bandits-on-the-river",
+  "title": "Bandits On The River",
+  "description": "A 1st-level Pathfinder Second Edition river adventure, and the showcase content for Automate FVTT.",
   "version": "0.1.0",
   "authors": [
     {
@@ -26,8 +26,8 @@
   "esmodules": [
     "scripts/module.js"
   ],
-  "url": "https://github.com/buddha314/automate-fvtt-pathfinder",
-  "manifest": "https://raw.githubusercontent.com/buddha314/automate-fvtt-pathfinder/main/module.json",
-  "download": "https://github.com/buddha314/automate-fvtt-pathfinder/releases/latest/download/module.zip",
+  "url": "https://github.com/buddha314/bandits-on-the-river",
+  "manifest": "https://raw.githubusercontent.com/buddha314/bandits-on-the-river/main/module.json",
+  "download": "https://github.com/buddha314/bandits-on-the-river/releases/latest/download/module.zip",
   "license": "OPEN-GAME-LICENSE.txt"
 }
