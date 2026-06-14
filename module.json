@@ -1,0 +1,33 @@
+{
+  "id": "automate-fvtt-pathfinder",
+  "title": "Automate FVTT Pathfinder Starter Content",
+  "description": "Starter Pathfinder crafting and Kingdom Building content for Automate FVTT.",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "buddha314"
+    }
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "automate-fvtt",
+        "type": "system",
+        "compatibility": {
+          "minimum": "0.1.0"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/module.js"
+  ],
+  "url": "https://github.com/buddha314/automate-fvtt-pathfinder",
+  "manifest": "https://raw.githubusercontent.com/buddha314/automate-fvtt-pathfinder/main/module.json",
+  "download": "https://github.com/buddha314/automate-fvtt-pathfinder/releases/latest/download/module.zip",
+  "license": "OPEN-GAME-LICENSE.txt"
+}
