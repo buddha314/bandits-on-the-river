@@ -1,0 +1,29 @@
+{
+  "_key": "!scenes!nAGo6zcsuqq0LUfF",
+  "_id": "nAGo6zcsuqq0LUfF",
+  "name": "Pacuare Gorge — Region",
+  "navigation": true,
+  "navName": "Pacuare Gorge",
+  "background": {
+    "src": "modules/bandits-on-the-river/assets/scenes/pacuare-gorge.webp"
+  },
+  "width": 1536,
+  "height": 1024,
+  "padding": 0.25,
+  "backgroundColor": "#000000",
+  "grid": {
+    "type": 4,
+    "size": 100,
+    "distance": 6,
+    "units": "mi"
+  },
+  "tokenVision": false,
+  "flags": {
+    "bandits-on-the-river": {
+      "role": "region-overview"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}
