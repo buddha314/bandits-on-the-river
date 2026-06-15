@@ -1,0 +1,29 @@
+{
+  "_key": "!scenes!AcdhMwcg4PdbjpV1",
+  "_id": "AcdhMwcg4PdbjpV1",
+  "name": "Bandits on the River — Title",
+  "navigation": true,
+  "navName": "Title",
+  "background": {
+    "src": "modules/bandits-on-the-river/assets/cover.webp"
+  },
+  "width": 1536,
+  "height": 1024,
+  "padding": 0.25,
+  "backgroundColor": "#000000",
+  "grid": {
+    "type": 0,
+    "size": 100,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": false,
+  "flags": {
+    "bandits-on-the-river": {
+      "role": "title-splash"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+
+# LevelDB runtime/debug files. The numbered .ldb and .log data files ARE committed
+# (CURRENT/MANIFEST reference them by name); these others are recreated on open:
+packs/**/LOCK
+packs/**/LOG
+packs/**/LOG.old

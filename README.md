@@ -1,5 +1,7 @@
 # Bandits On The River
 
+![Bandits On The River](assets/cover.webp)
+
 A 1st-level **Pathfinder Second Edition** river adventure, and the showcase content for the [`automate-fvtt`](https://github.com/buddha314/automate-fvtt) ecosystem. The party travels the river for a few weeks securing the supply line their home village depends on — while the village's resources tick down under Automate FVTT's economy engine.
 
 > Formerly `automate-fvtt-pathfinder`. The repository, module id, and title were renamed to `bandits-on-the-river`; GitHub redirects the old URLs.

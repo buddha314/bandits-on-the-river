@@ -41,6 +41,20 @@
   "esmodules": [
     "scripts/module.js"
   ],
+  "packs": [
+    {
+      "name": "scenes",
+      "label": "Bandits on the River — Scenes",
+      "path": "packs/scenes",
+      "type": "Scene"
+    }
+  ],
+  "media": [
+    {
+      "type": "cover",
+      "url": "https://raw.githubusercontent.com/buddha314/bandits-on-the-river/main/assets/cover.webp"
+    }
+  ],
   "url": "https://github.com/buddha314/bandits-on-the-river",
   "manifest": "https://raw.githubusercontent.com/buddha314/bandits-on-the-river/main/module.json",
   "download": "https://github.com/buddha314/bandits-on-the-river/releases/latest/download/module.zip",

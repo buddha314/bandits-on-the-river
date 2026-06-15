@@ -1,0 +1,14 @@
+{
+  "name": "bandits-on-the-river",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Build tooling for the Bandits On The River Foundry module. Compendium content is authored as source JSON under src/packs/ and compiled into LevelDB packs under packs/ (which Foundry loads). Foundry itself ignores this file.",
+  "scripts": {
+    "pack": "node tools/build-packs.mjs pack",
+    "unpack": "node tools/build-packs.mjs unpack"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^1.0.4"
+  }
+}
