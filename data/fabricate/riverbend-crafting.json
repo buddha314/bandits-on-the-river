@@ -1,0 +1,437 @@
+{
+  "fabricateVersion": "1.0.0-rc.87",
+  "exportedAt": "2026-06-15T00:00:00.000Z",
+  "system": {
+    "id": "W2UkoywesaqGY0Im",
+    "name": "Riverbend Crafting",
+    "description": "Starter crafting for the riverside fishing village (bandits-on-the-river). 5-item starter; see issue #4.",
+    "components": [
+      {
+        "id": "auO8oOSIAWSgsKEq",
+        "name": "Torch",
+        "sourceItemUuid": "Compendium.pf2e.equipment-srd.Item.8Jdw4yAzWYylGePS",
+        "disabled": false,
+        "essences": {},
+        "salvageOptions": []
+      },
+      {
+        "id": "kgEUee4wvy2Sc2qQ",
+        "name": "Rope",
+        "sourceItemUuid": "Compendium.pf2e.equipment-srd.Item.fyYnQf1NAx9fWFaS",
+        "disabled": false,
+        "essences": {},
+        "salvageOptions": []
+      },
+      {
+        "id": "oKcAIymMDu6SiSCE",
+        "name": "Alchemist's Fire (Lesser)",
+        "sourceItemUuid": "Compendium.pf2e.equipment-srd.Item.yd3kEK21YknZLlcT",
+        "disabled": false,
+        "essences": {},
+        "salvageOptions": []
+      },
+      {
+        "id": "0m6CUuGayo2q82Um",
+        "name": "Antidote (Lesser)",
+        "sourceItemUuid": "Compendium.pf2e.equipment-srd.Item.ktjFOp3U0wQD9t0Z",
+        "disabled": false,
+        "essences": {},
+        "salvageOptions": []
+      },
+      {
+        "id": "6aEM2SiuQOyugE6W",
+        "name": "Healing Potion (Minor)",
+        "sourceItemUuid": "Compendium.pf2e.equipment-srd.Item.2RuepCemJhrpKKao",
+        "disabled": false,
+        "essences": {},
+        "salvageOptions": []
+      }
+    ],
+    "essenceDefinitions": [],
+    "itemTags": [],
+    "categories": [],
+    "gatheringRealms": []
+  },
+  "recipes": [
+    {
+      "id": "I0e4uqcuGQwSKyWc",
+      "name": "Torch",
+      "description": "",
+      "img": "icons/svg/item-bag.svg",
+      "category": "general",
+      "craftingSystemId": "W2UkoywesaqGY0Im",
+      "system": "all",
+      "tags": [],
+      "enabled": true,
+      "locked": false,
+      "recipeItemId": null,
+      "linkedRecipeItemUuid": null,
+      "visibility": null,
+      "steps": [],
+      "ingredientSets": [
+        {
+          "id": "default",
+          "name": "",
+          "ingredientGroups": [],
+          "ingredients": [],
+          "essences": {},
+          "toolIds": [],
+          "resultMapping": [],
+          "resultGroupId": null
+        }
+      ],
+      "resultGroups": [
+        {
+          "id": "default",
+          "name": "Default",
+          "results": [
+            {
+              "id": "default-result",
+              "componentId": null,
+              "systemItemId": null,
+              "itemUuid": "Compendium.pf2e.equipment-srd.Item.8Jdw4yAzWYylGePS",
+              "quantity": 1,
+              "propertyMacroUuid": null
+            }
+          ]
+        }
+      ],
+      "toolIds": [],
+      "results": [
+        {
+          "id": "default-result",
+          "componentId": null,
+          "systemItemId": null,
+          "itemUuid": "Compendium.pf2e.equipment-srd.Item.8Jdw4yAzWYylGePS",
+          "quantity": 1,
+          "propertyMacroUuid": null
+        }
+      ],
+      "isVariable": false,
+      "transferEffects": false,
+      "outcomeRouting": null,
+      "resultSelection": null,
+      "currencyCost": null,
+      "teaser": {
+        "enabled": true,
+        "hiddenFields": [
+          "ingredients",
+          "results",
+          "description"
+        ],
+        "revealThreshold": 100,
+        "teaserDescription": ""
+      },
+      "metadata": {
+        "created": 1781492729027,
+        "modified": 1781492729027,
+        "author": "bandits-seed",
+        "version": "1.0.0"
+      }
+    },
+    {
+      "id": "MokI6mU0qG6Oe8qM",
+      "name": "Rope",
+      "description": "",
+      "img": "icons/svg/item-bag.svg",
+      "category": "general",
+      "craftingSystemId": "W2UkoywesaqGY0Im",
+      "system": "all",
+      "tags": [],
+      "enabled": true,
+      "locked": false,
+      "recipeItemId": null,
+      "linkedRecipeItemUuid": null,
+      "visibility": null,
+      "steps": [],
+      "ingredientSets": [
+        {
+          "id": "default",
+          "name": "",
+          "ingredientGroups": [],
+          "ingredients": [],
+          "essences": {},
+          "toolIds": [],
+          "resultMapping": [],
+          "resultGroupId": null
+        }
+      ],
+      "resultGroups": [
+        {
+          "id": "default",
+          "name": "Default",
+          "results": [
+            {
+              "id": "default-result",
+              "componentId": null,
+              "systemItemId": null,
+              "itemUuid": "Compendium.pf2e.equipment-srd.Item.fyYnQf1NAx9fWFaS",
+              "quantity": 1,
+              "propertyMacroUuid": null
+            }
+          ]
+        }
+      ],
+      "toolIds": [],
+      "results": [
+        {
+          "id": "default-result",
+          "componentId": null,
+          "systemItemId": null,
+          "itemUuid": "Compendium.pf2e.equipment-srd.Item.fyYnQf1NAx9fWFaS",
+          "quantity": 1,
+          "propertyMacroUuid": null
+        }
+      ],
+      "isVariable": false,
+      "transferEffects": false,
+      "outcomeRouting": null,
+      "resultSelection": null,
+      "currencyCost": null,
+      "teaser": {
+        "enabled": true,
+        "hiddenFields": [
+          "ingredients",
+          "results",
+          "description"
+        ],
+        "revealThreshold": 100,
+        "teaserDescription": ""
+      },
+      "metadata": {
+        "created": 1781492729027,
+        "modified": 1781492729027,
+        "author": "bandits-seed",
+        "version": "1.0.0"
+      }
+    },
+    {
+      "id": "WWmUGsuyg6CSIWS4",
+      "name": "Alchemist's Fire (Lesser)",
+      "description": "",
+      "img": "icons/svg/item-bag.svg",
+      "category": "general",
+      "craftingSystemId": "W2UkoywesaqGY0Im",
+      "system": "all",
+      "tags": [],
+      "enabled": true,
+      "locked": false,
+      "recipeItemId": null,
+      "linkedRecipeItemUuid": null,
+      "visibility": null,
+      "steps": [],
+      "ingredientSets": [
+        {
+          "id": "default",
+          "name": "",
+          "ingredientGroups": [],
+          "ingredients": [],
+          "essences": {},
+          "toolIds": [],
+          "resultMapping": [],
+          "resultGroupId": null
+        }
+      ],
+      "resultGroups": [
+        {
+          "id": "default",
+          "name": "Default",
+          "results": [
+            {
+              "id": "default-result",
+              "componentId": null,
+              "systemItemId": null,
+              "itemUuid": "Compendium.pf2e.equipment-srd.Item.yd3kEK21YknZLlcT",
+              "quantity": 1,
+              "propertyMacroUuid": null
+            }
+          ]
+        }
+      ],
+      "toolIds": [],
+      "results": [
+        {
+          "id": "default-result",
+          "componentId": null,
+          "systemItemId": null,
+          "itemUuid": "Compendium.pf2e.equipment-srd.Item.yd3kEK21YknZLlcT",
+          "quantity": 1,
+          "propertyMacroUuid": null
+        }
+      ],
+      "isVariable": false,
+      "transferEffects": false,
+      "outcomeRouting": null,
+      "resultSelection": null,
+      "currencyCost": null,
+      "teaser": {
+        "enabled": true,
+        "hiddenFields": [
+          "ingredients",
+          "results",
+          "description"
+        ],
+        "revealThreshold": 100,
+        "teaserDescription": ""
+      },
+      "metadata": {
+        "created": 1781492729027,
+        "modified": 1781492729027,
+        "author": "bandits-seed",
+        "version": "1.0.0"
+      }
+    },
+    {
+      "id": "aIoUOqQyMQ2kGGue",
+      "name": "Antidote (Lesser)",
+      "description": "",
+      "img": "icons/svg/item-bag.svg",
+      "category": "general",
+      "craftingSystemId": "W2UkoywesaqGY0Im",
+      "system": "all",
+      "tags": [],
+      "enabled": true,
+      "locked": false,
+      "recipeItemId": null,
+      "linkedRecipeItemUuid": null,
+      "visibility": null,
+      "steps": [],
+      "ingredientSets": [
+        {
+          "id": "default",
+          "name": "",
+          "ingredientGroups": [],
+          "ingredients": [],
+          "essences": {},
+          "toolIds": [],
+          "resultMapping": [],
+          "resultGroupId": null
+        }
+      ],
+      "resultGroups": [
+        {
+          "id": "default",
+          "name": "Default",
+          "results": [
+            {
+              "id": "default-result",
+              "componentId": null,
+              "systemItemId": null,
+              "itemUuid": "Compendium.pf2e.equipment-srd.Item.ktjFOp3U0wQD9t0Z",
+              "quantity": 1,
+              "propertyMacroUuid": null
+            }
+          ]
+        }
+      ],
+      "toolIds": [],
+      "results": [
+        {
+          "id": "default-result",
+          "componentId": null,
+          "systemItemId": null,
+          "itemUuid": "Compendium.pf2e.equipment-srd.Item.ktjFOp3U0wQD9t0Z",
+          "quantity": 1,
+          "propertyMacroUuid": null
+        }
+      ],
+      "isVariable": false,
+      "transferEffects": false,
+      "outcomeRouting": null,
+      "resultSelection": null,
+      "currencyCost": null,
+      "teaser": {
+        "enabled": true,
+        "hiddenFields": [
+          "ingredients",
+          "results",
+          "description"
+        ],
+        "revealThreshold": 100,
+        "teaserDescription": ""
+      },
+      "metadata": {
+        "created": 1781492729027,
+        "modified": 1781492729027,
+        "author": "bandits-seed",
+        "version": "1.0.0"
+      }
+    },
+    {
+      "id": "isKWa28GYoga0am6",
+      "name": "Healing Potion (Minor)",
+      "description": "",
+      "img": "icons/svg/item-bag.svg",
+      "category": "general",
+      "craftingSystemId": "W2UkoywesaqGY0Im",
+      "system": "all",
+      "tags": [],
+      "enabled": true,
+      "locked": false,
+      "recipeItemId": null,
+      "linkedRecipeItemUuid": null,
+      "visibility": null,
+      "steps": [],
+      "ingredientSets": [
+        {
+          "id": "default",
+          "name": "",
+          "ingredientGroups": [],
+          "ingredients": [],
+          "essences": {},
+          "toolIds": [],
+          "resultMapping": [],
+          "resultGroupId": null
+        }
+      ],
+      "resultGroups": [
+        {
+          "id": "default",
+          "name": "Default",
+          "results": [
+            {
+              "id": "default-result",
+              "componentId": null,
+              "systemItemId": null,
+              "itemUuid": "Compendium.pf2e.equipment-srd.Item.2RuepCemJhrpKKao",
+              "quantity": 1,
+              "propertyMacroUuid": null
+            }
+          ]
+        }
+      ],
+      "toolIds": [],
+      "results": [
+        {
+          "id": "default-result",
+          "componentId": null,
+          "systemItemId": null,
+          "itemUuid": "Compendium.pf2e.equipment-srd.Item.2RuepCemJhrpKKao",
+          "quantity": 1,
+          "propertyMacroUuid": null
+        }
+      ],
+      "isVariable": false,
+      "transferEffects": false,
+      "outcomeRouting": null,
+      "resultSelection": null,
+      "currencyCost": null,
+      "teaser": {
+        "enabled": true,
+        "hiddenFields": [
+          "ingredients",
+          "results",
+          "description"
+        ],
+        "revealThreshold": 100,
+        "teaserDescription": ""
+      },
+      "metadata": {
+        "created": 1781492729027,
+        "modified": 1781492729027,
+        "author": "bandits-seed",
+        "version": "1.0.0"
+      }
+    }
+  ]
+}
