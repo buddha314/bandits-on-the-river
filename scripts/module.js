@@ -48,21 +48,13 @@ Hooks.once("automate-fvtt.ready", async (_adapter, _ok) => {
     outputs: { "raw-materials": 5 },
   });
 
-  // NEXT (needs the authored Fabricate system JSON — see data/fabricate/, issue #4):
-  // seed the crafting system, then register a Fabricate-backed craft rule per item
-  // so the Keep can turn `raw-materials` into the real pf2e item over time:
-  //
-  //   await api.fabricate.seedSystem(
-  //     `modules/${MODULE_ID}/data/fabricate/riverbend-crafting.json`);
-  //   api.rules.setComponentMap([{ componentId: "<raw-materials-component>", resourceKey: "raw-materials" }]);
-  //   for (const item of crafting.items) {
-  //     api.rules.register(api.rules.makeFabricateRule({
-  //       id: `${MODULE_ID}.craft.${item.key}`,
-  //       intervalSeconds: 86400,
-  //       fabricate: { op: api.rules.FAB_OP.CRAFT, recipeId: `<recipe-for-${item.key}>`,
-  //                    ingredients: { "raw-materials": item.rawMaterials } },
-  //     }));
-  //   }
+  // CRAFTING DIRECTION: Fabricate's player Crafting tab is "Coming soon" in rc.87
+  // (only Gathering is implemented), so we do NOT drive crafting through Fabricate
+  // yet. Instead:
+  //   - resource harvesting → Fabricate Gathering (real today), and
+  //   - crafting → automate-fvtt numeric *converter* rules (raw-materials -> good),
+  //     using data/crafting/items.json (pf2e item refs + ½-Price recipe model) as
+  //     the spec. The Fabricate craft seed is parked until that tab ships.
 
   console.log(
     `${MODULE_ID} | registered Keep economy; ${crafting.items.length} craftable items staged.`
