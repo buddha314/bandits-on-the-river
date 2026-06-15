@@ -70,10 +70,10 @@ for (const name of packs) {
   if (mode === "unpack") {
     await extractPack(out, src, { log: true });
   } else {
-    if (!hasDocs(src)) {
-      console.log(`skip ${name} (no source documents yet)`);
-      continue;
-    }
+    // Compile every declared pack dir, even when empty — an empty source folder
+    // produces a valid empty LevelDB (an empty compendium), which is what we want
+    // for content folders that exist but aren't authored yet.
+    if (!hasDocs(src)) console.log(`(building empty pack ${name})`);
     await compilePack(src, out, { log: true });
   }
 }

@@ -47,6 +47,26 @@
       "label": "Bandits on the River — Scenes",
       "path": "packs/scenes",
       "type": "Scene"
+    },
+    {
+      "name": "journals",
+      "label": "Bandits on the River — Journals",
+      "path": "packs/journals",
+      "type": "JournalEntry"
+    },
+    {
+      "name": "actors",
+      "label": "Bandits on the River — NPCs",
+      "path": "packs/actors",
+      "type": "Actor",
+      "system": "pf2e"
+    },
+    {
+      "name": "items",
+      "label": "Bandits on the River — Items",
+      "path": "packs/items",
+      "type": "Item",
+      "system": "pf2e"
     }
   ],
   "media": [

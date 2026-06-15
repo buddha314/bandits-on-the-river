@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "system": "pf2e",
+  "note": "Starter craftable items for the riverside village. Results are REAL pf2e items (referenced by UUID from the equipment-srd compendium); recipes follow basic PF2e crafting: consume raw materials worth half the item's Price + the formula, then a Crafting check over time. `rawMaterials` is that half-Price expressed in `raw-materials` units (1 unit ~= 1 sp; rounded up, min 1). See bandits-on-the-river issue #4.",
+  "rawMaterial": {
+    "resourceKey": "raw-materials",
+    "unitValueSp": 1,
+    "formula": "rawMaterials = max(1, ceil(priceInSp / 2))"
+  },
+  "items": [
+    { "key": "torch",                 "name": "Torch",                     "uuid": "Compendium.pf2e.equipment-srd.Item.8Jdw4yAzWYylGePS", "category": "gear",    "type": "equipment", "level": 0, "price": { "cp": 1 }, "rawMaterials": 1,  "formula": false },
+    { "key": "rope",                  "name": "Rope",                      "uuid": "Compendium.pf2e.equipment-srd.Item.fyYnQf1NAx9fWFaS", "category": "gear",    "type": "equipment", "level": 0, "price": { "sp": 5 }, "rawMaterials": 3,  "formula": false },
+    { "key": "grappling-hook",        "name": "Grappling Hook",            "uuid": "Compendium.pf2e.equipment-srd.Item.6DCy7tEF1cxaIJMy", "category": "gear",    "type": "equipment", "level": 0, "price": { "sp": 1 }, "rawMaterials": 1,  "formula": false },
+    { "key": "caltrops",              "name": "Caltrops",                  "uuid": "Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD", "category": "gear",    "type": "equipment", "level": 0, "price": { "sp": 3 }, "rawMaterials": 2,  "formula": false },
+    { "key": "fishing-tackle",        "name": "Fishing Tackle",            "uuid": "Compendium.pf2e.equipment-srd.Item.3tOyV4VZEZhwnAMO", "category": "gear",    "type": "equipment", "level": 0, "price": { "sp": 8 }, "rawMaterials": 4,  "formula": false },
+    { "key": "alchemists-fire-lesser","name": "Alchemist's Fire (Lesser)", "uuid": "Compendium.pf2e.equipment-srd.Item.yd3kEK21YknZLlcT", "category": "alchemy", "type": "weapon",    "level": 1, "price": { "gp": 3 }, "rawMaterials": 15, "formula": true },
+    { "key": "antidote-lesser",       "name": "Antidote (Lesser)",         "uuid": "Compendium.pf2e.equipment-srd.Item.ktjFOp3U0wQD9t0Z", "category": "alchemy", "type": "consumable","level": 1, "price": { "gp": 3 }, "rawMaterials": 15, "formula": true },
+    { "key": "antiplague-lesser",     "name": "Antiplague (Lesser)",       "uuid": "Compendium.pf2e.equipment-srd.Item.UqinuuCWePTYGhVO", "category": "alchemy", "type": "consumable","level": 1, "price": { "gp": 3 }, "rawMaterials": 15, "formula": true },
+    { "key": "acid-flask-lesser",     "name": "Acid Flask (Lesser)",       "uuid": "Compendium.pf2e.equipment-srd.Item.M1k5QQc1qQLxzyCK", "category": "alchemy", "type": "weapon",    "level": 1, "price": { "gp": 3 }, "rawMaterials": 15, "formula": true },
+    { "key": "healing-potion-minor",  "name": "Healing Potion (Minor)",    "uuid": "Compendium.pf2e.equipment-srd.Item.2RuepCemJhrpKKao", "category": "magic",   "type": "consumable","level": 1, "price": { "gp": 4 }, "rawMaterials": 20, "formula": true }
+  ]
+}
