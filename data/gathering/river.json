@@ -1,0 +1,8 @@
+{
+  "note": "Config for the Keep's automated gathering from a Fabricate environment. Author the environment + task in Fabricate (see docs/GATHERING.md), then paste their ids here and set enabled:true. Until then this is inert.",
+  "enabled": false,
+  "environmentId": "",
+  "taskId": "",
+  "intervalSeconds": 86400,
+  "componentMap": []
+}
