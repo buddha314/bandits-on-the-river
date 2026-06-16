@@ -214,15 +214,15 @@
       "navigation": true,
       "navName": "Pacuare Falls",
       "background": {
-        "src": "modules/bandits-on-the-river/assets/cover.webp"
+        "src": "modules/bandits-on-the-river/assets/scenes/pacuare-falls.webp"
       },
       "width": 1536,
       "height": 1024,
-      "padding": 0.25,
+      "padding": 0,
       "backgroundColor": "#0f0c08",
       "grid": {
         "type": 1,
-        "size": 100,
+        "size": 64,
         "distance": 5,
         "units": "ft"
       },
