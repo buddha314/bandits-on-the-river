@@ -47,13 +47,16 @@ jobs:
       - name: Build module.zip (runtime files only — includes built packs/)
         run: |
           set -euo pipefail
+          # Drop LevelDB runtime files (recreated by Foundry on open); keep the
+          # actual pack data (.ldb / numbered .log / CURRENT / MANIFEST-*).
+          find packs -type f \( -name LOG -o -name LOG.old -o -name LOCK \) -delete
           items=""
           for p in module.json scripts styles templates packs assets data README.md OPEN-GAME-CONTENT.md OPEN-GAME-LICENSE.txt; do
             [ -e "$p" ] && items="$items $p"
           done
           echo "zipping:$items"
           zip -r module.zip $items
-          unzip -l module.zip | tail -8
+          echo "LOG/LOCK entries remaining (want 0): $(unzip -l module.zip | grep -cE 'packs/.*/(LOG|LOG\.old|LOCK)$')"
 
       - name: Attach assets to the release
         env:
