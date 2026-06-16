@@ -1,0 +1,62 @@
+name: Release
+
+# Publish a GitHub Release (tag like v0.1.0) and this rebuilds the compendium
+# packs from source, builds the Foundry module.json + module.zip, and attaches
+# them as the release's assets (what the install/update manifest URL resolves to).
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      # Rebuild packs deterministically from src/ so the released LevelDB is
+      # reproducible (no Foundry running in CI, so the pack guard is satisfied).
+      - name: Build compendium packs from source
+        run: |
+          npm run build:adventure
+          npm run pack
+
+      - name: Stamp version + manifest/download URLs into module.json
+        env:
+          TAG: ${{ github.event.release.tag_name }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          VERSION="${TAG#v}"
+          MANIFEST="https://github.com/${REPO}/releases/latest/download/module.json"
+          DOWNLOAD="https://github.com/${REPO}/releases/download/${TAG}/module.zip"
+          jq --arg v "$VERSION" --arg m "$MANIFEST" --arg d "$DOWNLOAD" \
+            '.version=$v | .manifest=$m | .download=$d' module.json > module.tmp
+          mv module.tmp module.json
+          echo "Released module.json:"; jq '{id, version, manifest, download}' module.json
+
+      - name: Build module.zip (runtime files only — includes built packs/)
+        run: |
+          set -euo pipefail
+          items=""
+          for p in module.json scripts styles templates packs assets data README.md OPEN-GAME-CONTENT.md OPEN-GAME-LICENSE.txt; do
+            [ -e "$p" ] && items="$items $p"
+          done
+          echo "zipping:$items"
+          zip -r module.zip $items
+          unzip -l module.zip | tail -8
+
+      - name: Attach assets to the release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ github.event.release.tag_name }}
+        run: gh release upload "$TAG" module.json module.zip --clobber
