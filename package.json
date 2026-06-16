@@ -7,9 +7,11 @@
   "scripts": {
     "pack": "node tools/build-packs.mjs pack",
     "unpack": "node tools/build-packs.mjs unpack",
-    "build:adventure": "node tools/build-adventure.mjs"
+    "build:adventure": "node tools/build-adventure.mjs",
+    "docs": "jsdoc -c jsdoc.json"
   },
   "devDependencies": {
-    "@foundryvtt/foundryvtt-cli": "^1.0.4"
+    "@foundryvtt/foundryvtt-cli": "^1.0.4",
+    "jsdoc": "^4.0.5"
   }
 }
