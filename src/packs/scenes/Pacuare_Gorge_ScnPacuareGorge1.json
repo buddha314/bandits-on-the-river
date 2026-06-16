@@ -5,11 +5,11 @@
   "navigation": true,
   "navName": "Gorge",
   "background": {
-    "src": "modules/bandits-on-the-river/assets/cover.webp"
+    "src": "modules/bandits-on-the-river/assets/scenes/pacuare-region.webp"
   },
   "width": 1536,
   "height": 1024,
-  "padding": 0.25,
+  "padding": 0,
   "backgroundColor": "#0d0f0a",
   "grid": {
     "type": 0,
