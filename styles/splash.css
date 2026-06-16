@@ -1,0 +1,132 @@
+/* Bandits on the River — new-world splash / adventure importer. */
+
+#bandits-splash .window-content {
+  padding: 0;
+  overflow: hidden auto;
+}
+
+.bandits-splash__hero {
+  margin: 0;
+  line-height: 0;
+  background: #000;
+}
+
+.bandits-splash__hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 240px;
+  object-fit: cover;
+  border: none;
+}
+
+.bandits-splash__body {
+  padding: 0.75rem 1rem 0.25rem;
+}
+
+.bandits-splash__desc {
+  font-size: var(--font-size-14);
+}
+
+.bandits-splash__desc p {
+  margin: 0 0 0.5em;
+}
+
+.bandits-splash__heading {
+  margin: 0.75rem 0 0.35rem;
+  font-size: var(--font-size-14);
+  border-bottom: 1px solid var(--color-border-light-tertiary, #7a7971);
+  padding-bottom: 0.2rem;
+}
+
+.bandits-splash__deps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.bandits-dep {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.2rem 0.35rem;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.bandits-dep__icon {
+  width: 1.1em;
+  text-align: center;
+}
+
+.bandits-dep--active .bandits-dep__icon { color: #2e7d32; }
+.bandits-dep--disabled .bandits-dep__icon { color: #b8860b; }
+.bandits-dep--missing .bandits-dep__icon { color: #b00020; }
+
+.bandits-dep__name {
+  font-weight: 600;
+}
+
+.bandits-dep__status {
+  margin-left: auto;
+  font-size: var(--font-size-12);
+  opacity: 0.8;
+}
+
+.bandits-dep__enable {
+  flex: 0 0 auto;
+  width: auto;
+  margin: 0 0 0 0.5rem;
+  padding: 0.1rem 0.5rem;
+  font-size: var(--font-size-12);
+  line-height: 1.6;
+}
+
+.bandits-splash__warn {
+  margin: 0.6rem 0 0.2rem;
+  padding: 0.4rem 0.6rem;
+  border-left: 3px solid #b00020;
+  background: rgba(176, 0, 32, 0.08);
+  font-size: var(--font-size-13);
+}
+
+.bandits-splash__footer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1rem 0.85rem;
+  border-top: 1px solid var(--color-border-light-tertiary, #7a7971);
+}
+
+.bandits-splash__dontshow {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: var(--font-size-12);
+  white-space: nowrap;
+}
+
+.bandits-splash__dontshow input {
+  width: auto;
+  margin: 0;
+}
+
+.bandits-splash__buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.bandits-splash__buttons button {
+  width: auto;
+  white-space: nowrap;
+}
+
+.bandits-splash__import {
+  background: var(--color-warm-2, #5a3e2b);
+  color: var(--color-light-1, #f0f0e0);
+  font-weight: 600;
+}

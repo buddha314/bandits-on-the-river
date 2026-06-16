@@ -1,0 +1,56 @@
+{
+  "_key": "!adventures!BanditsRiverAdv1",
+  "_id": "BanditsRiverAdv1",
+  "name": "Bandits on the River",
+  "img": "modules/bandits-on-the-river/assets/cover.webp",
+  "caption": "A 1st-level PF2e river adventure — the Automate FVTT showcase.",
+  "description": "<p><strong>Bandits on the River</strong> — a 1st-level Pathfinder Second\nEdition river adventure, and the showcase content for <em>Automate FVTT</em>.</p>\n<p>Importing creates the adventure's scenes, journals, NPCs and items in this\nworld. Re-importing later merges updates without losing your changes.</p>",
+  "sort": 0,
+  "folders": [],
+  "actors": [],
+  "combats": [],
+  "items": [],
+  "journal": [],
+  "scenes": [
+    {
+      "_id": "AcdhMwcg4PdbjpV1",
+      "name": "Bandits on the River — Title",
+      "navigation": true,
+      "navName": "Title",
+      "background": {
+        "src": "modules/bandits-on-the-river/assets/cover.webp"
+      },
+      "width": 1536,
+      "height": 1024,
+      "padding": 0.25,
+      "backgroundColor": "#000000",
+      "grid": {
+        "type": 0,
+        "size": 100,
+        "distance": 5,
+        "units": "ft"
+      },
+      "tokenVision": false,
+      "flags": {
+        "bandits-on-the-river": {
+          "role": "title-splash"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    }
+  ],
+  "tables": [],
+  "macros": [],
+  "cards": [],
+  "playlists": [],
+  "flags": {
+    "bandits-on-the-river": {
+      "generated": true
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

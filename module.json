@@ -41,7 +41,17 @@
   "esmodules": [
     "scripts/module.js"
   ],
+  "styles": [
+    "styles/splash.css"
+  ],
   "packs": [
+    {
+      "name": "adventure",
+      "label": "Bandits on the River — Adventure",
+      "path": "packs/adventure",
+      "type": "Adventure",
+      "system": "pf2e"
+    },
     {
       "name": "scenes",
       "label": "Bandits on the River — Scenes",

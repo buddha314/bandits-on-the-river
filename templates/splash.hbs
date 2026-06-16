@@ -1,0 +1,47 @@
+<div class="bandits-splash__wrap">
+<section class="bandits-splash__hero">
+  <img src="{{cover}}" alt="{{title}}" />
+</section>
+
+<section class="bandits-splash__body">
+  <div class="bandits-splash__desc">{{{description}}}</div>
+
+  <h3 class="bandits-splash__heading"><i class="fa-solid fa-cubes-stacked"></i> Required content</h3>
+  <ul class="bandits-splash__deps">
+    {{#each deps}}
+    <li class="bandits-dep bandits-dep--{{this.status}}">
+      <i class="bandits-dep__icon {{this.icon}}"></i>
+      <span class="bandits-dep__name">{{this.label}}</span>
+      <span class="bandits-dep__status">{{this.statusLabel}}</span>
+      {{#if this.canEnable}}
+      <button type="button" class="bandits-dep__enable" data-action="enableDep" data-id="{{this.id}}">
+        <i class="fa-solid fa-power-off"></i> Enable &amp; reload
+      </button>
+      {{/if}}
+    </li>
+    {{/each}}
+  </ul>
+
+  {{#unless systemOk}}
+  <p class="bandits-splash__warn">
+    <i class="fa-solid fa-triangle-exclamation"></i>
+    This is a Pathfinder 2e adventure, but this world's system is
+    <strong>{{worldSystem}}</strong>. Import is disabled — create a pf2e world to play it.
+  </p>
+  {{/unless}}
+</section>
+
+<footer class="bandits-splash__footer">
+  <label class="bandits-splash__dontshow">
+    <input type="checkbox" name="dontShow" /> Don't show this on startup
+  </label>
+  <div class="bandits-splash__buttons">
+    <button type="button" data-action="dismiss">
+      <i class="fa-solid fa-clock"></i> Maybe later
+    </button>
+    <button type="button" class="bandits-splash__import" data-action="importAdventure" {{#unless systemOk}}disabled{{/unless}}>
+      <i class="fa-solid fa-download"></i> Import the Adventure
+    </button>
+  </div>
+</footer>
+</div>
