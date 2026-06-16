@@ -1,0 +1,17 @@
+{
+  "source": {
+    "include": ["scripts", "tools", "README.md"],
+    "includePattern": ".+\\.m?js$",
+    "excludePattern": "(^|\\/|\\\\)node_modules(\\/|\\\\|$)"
+  },
+  "opts": {
+    "recurse": true,
+    "destination": "./jsdoc",
+    "readme": "README.md"
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": false
+  }
+}
