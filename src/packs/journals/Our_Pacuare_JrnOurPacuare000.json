@@ -1,0 +1,37 @@
+{
+  "_key": "!journal!JrnOurPacuare000",
+  "_id": "JrnOurPacuare000",
+  "name": "Our Pacuare",
+  "pages": [
+    {
+      "_key": "!journal.pages!JrnOurPacuare000.PgOurPacuareOver",
+      "_id": "PgOurPacuareOver",
+      "name": "Overview",
+      "type": "text",
+      "title": { "show": true, "level": 1 },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Our Pacuare</strong> is the fishing hamlet that the gorge's upper river feeds. A dozen-odd houses stand on stilts above the calm shallows, joined by plank walkways; nets and split fish hang drying on racks between them, and dugout canoes nose against every porch. The people here call the river \"ours\" with a kind of stubborn affection &mdash; they were born to it, they fish it, and they expect to be buried beside it.</p><p>Life is quiet work: setting fish traps in the reeds, gathering river-cane and rushes, smoking the catch for trade downstream. It is the sort of place where a stranger is noticed before their canoe touches the dock, and where a fair hand at fishing or a kind word buys more goodwill than coin.</p><p>That goodwill is strained now. Boats sent down to <strong>Pacuare Falls</strong> have stopped coming back, and with them some of the hamlet's own sons and daughters. The elders want the river made safe again &mdash; and they will offer what little they have to anyone willing to find out what waits downstream.</p>"
+      },
+      "sort": 100000,
+      "ownership": { "default": -1 },
+      "flags": {}
+    },
+    {
+      "_key": "!journal.pages!JrnOurPacuare000.PgOurPacuareGMno",
+      "_id": "PgOurPacuareGMno",
+      "name": "GM Notes",
+      "type": "text",
+      "title": { "show": true, "level": 1 },
+      "text": {
+        "format": 1,
+        "content": "<h2>The hub &amp; the Keep</h2><p>Our Pacuare is the party's home base and the <strong>Keep</strong> in Automate FVTT terms &mdash; the settlement whose economy ticks forward over time. It is also the <strong>gathering site</strong>: this scene carries the <code>gathering-river</code> role flag, and it's the canvas on which you author the Fabricate gathering environment, task, and resource nodes (see <em>docs/GATHERING.md</em>). \"Fish the River\" and \"Gather Reeds\" are the intended tasks; their yield lands in the Keep stockpile.</p><h2>Hooks</h2><ul><li>Missing boats and missing villagers downstream &mdash; the core quest that points the party toward Pacuare Falls.</li><li>An elder or fishmonger who can explain the failing trade and reward the party from the hamlet's stores.</li><li>A chance to earn standing by helping with the catch before the trouble is even named &mdash; lean on the gathering loop here.</li></ul><p>Swap the placeholder background for a hamlet battle map when ready; the scene links here via its <em>Journal Entry</em> field.</p>"
+      },
+      "sort": 200000,
+      "ownership": { "default": -1 },
+      "flags": {}
+    }
+  ],
+  "ownership": { "default": 0 },
+  "flags": {}
+}

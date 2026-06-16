@@ -1,0 +1,30 @@
+{
+  "_key": "!scenes!ScnPacuareGorge1",
+  "_id": "ScnPacuareGorge1",
+  "name": "Pacuare Gorge",
+  "navigation": true,
+  "navName": "Gorge",
+  "background": {
+    "src": "modules/bandits-on-the-river/assets/cover.webp"
+  },
+  "width": 1536,
+  "height": 1024,
+  "padding": 0.25,
+  "backgroundColor": "#0d0f0a",
+  "grid": {
+    "type": 0,
+    "size": 100,
+    "distance": 1,
+    "units": "mi"
+  },
+  "tokenVision": false,
+  "journal": "JrnPacuareGorge1",
+  "flags": {
+    "bandits-on-the-river": {
+      "role": "region-overview"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_key": "!scenes!ScnPacuareFalls0",
+  "_id": "ScnPacuareFalls0",
+  "name": "Pacuare Falls",
+  "navigation": true,
+  "navName": "Pacuare Falls",
+  "background": {
+    "src": "modules/bandits-on-the-river/assets/cover.webp"
+  },
+  "width": 1536,
+  "height": 1024,
+  "padding": 0.25,
+  "backgroundColor": "#0f0c08",
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": false,
+  "journal": "JrnPacuareFalls0",
+  "flags": {
+    "bandits-on-the-river": {
+      "role": "trading-village"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}

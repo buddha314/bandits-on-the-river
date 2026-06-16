@@ -1,0 +1,37 @@
+{
+  "_key": "!journal!JrnPacuareGorge1",
+  "_id": "JrnPacuareGorge1",
+  "name": "Pacuare Gorge",
+  "pages": [
+    {
+      "_key": "!journal.pages!JrnPacuareGorge1.PgPacuareGorgeOv",
+      "_id": "PgPacuareGorgeOv",
+      "name": "Overview",
+      "type": "text",
+      "title": { "show": true, "level": 1 },
+      "text": {
+        "format": 1,
+        "content": "<p>The <strong>Pacuare Gorge</strong> is a deep, green-walled canyon where the Pacuare River cuts through rainforest highland on its way to the lowlands. Mist hangs in the canopy, howler monkeys call from the ridgelines, and the river is the only road: everything and everyone moves by boat or along the muddy portage trails that cling to the gorge walls.</p><p>Two settlements bracket the gorge. Upstream, where the water runs calm and wide, sits the fishing hamlet of <strong>Our Pacuare</strong> &mdash; a knot of stilt houses and drying racks whose people live off the river's fish and reeds. Downstream the river gathers speed and plunges over the <strong>Pacuare Falls</strong>, and at the foot of that cataract stands the trading village of the same name, where river goods are hauled around the drop and bartered onward.</p><p>For as long as anyone remembers, boats and porters have passed freely between the two. Lately they have not. Cargo goes missing on the portage, boats put out from Our Pacuare and never reach the Falls, and the price of everything has crept upward. The river, the villagers say, has grown <em>teeth</em>.</p>"
+      },
+      "sort": 100000,
+      "ownership": { "default": -1 },
+      "flags": {}
+    },
+    {
+      "_key": "!journal.pages!JrnPacuareGorge1.PgPacuareGorgeGM",
+      "_id": "PgPacuareGorgeGM",
+      "name": "GM Notes",
+      "type": "text",
+      "title": { "show": true, "level": 1 },
+      "text": {
+        "format": 1,
+        "content": "<h2>Running the Gorge</h2><p>The gorge is the adventure's spine. Use this <em>Pacuare Gorge</em> scene as the regional overview &mdash; a travel map linking the two playable locations. The party will typically start in <strong>Our Pacuare</strong> (the fishing hamlet, and the Keep / gathering site) and work downstream toward <strong>Pacuare Falls</strong> (the trading village), where the trouble is worst.</p><h2>The trouble</h2><p>A band of river bandits has set up between the settlements, preying on the portage trail and the calmer pools above the falls. They are organized enough to choke trade but not strong enough to hold a village outright &mdash; a fitting threat for 1st-level characters. Their pressure on the river economy is what the players can feel mechanically through the Keep at Our Pacuare: gathered yield and trade thin out while the bandits operate.</p><p>Replace the placeholder background with a regional/gorge map when art is ready; the scene is wired to this journal via its <em>Journal Entry</em> link.</p>"
+      },
+      "sort": 200000,
+      "ownership": { "default": -1 },
+      "flags": {}
+    }
+  ],
+  "ownership": { "default": 0 },
+  "flags": {}
+}

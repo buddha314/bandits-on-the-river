@@ -62,6 +62,9 @@ function readDocs(dir) {
     .map((f) => {
       const doc = JSON.parse(readFileSync(`${path}/${f}`, "utf8"));
       delete doc._key; // `_key` is a top-level-pack artifact; embedded docs don't carry it
+      // Same for embedded sub-collections (e.g. JournalEntry pages keyed
+      // `!journal.pages!...`) — keep their `_id`, drop the pack-storage key.
+      for (const page of doc.pages ?? []) delete page._key;
       return doc;
     });
 }

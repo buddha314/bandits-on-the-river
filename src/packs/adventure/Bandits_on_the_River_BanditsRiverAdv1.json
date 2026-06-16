@@ -10,7 +10,146 @@
   "actors": [],
   "combats": [],
   "items": [],
-  "journal": [],
+  "journal": [
+    {
+      "_id": "JrnOurPacuare000",
+      "name": "Our Pacuare",
+      "pages": [
+        {
+          "_id": "PgOurPacuareOver",
+          "name": "Overview",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p><strong>Our Pacuare</strong> is the fishing hamlet that the gorge's upper river feeds. A dozen-odd houses stand on stilts above the calm shallows, joined by plank walkways; nets and split fish hang drying on racks between them, and dugout canoes nose against every porch. The people here call the river \"ours\" with a kind of stubborn affection &mdash; they were born to it, they fish it, and they expect to be buried beside it.</p><p>Life is quiet work: setting fish traps in the reeds, gathering river-cane and rushes, smoking the catch for trade downstream. It is the sort of place where a stranger is noticed before their canoe touches the dock, and where a fair hand at fishing or a kind word buys more goodwill than coin.</p><p>That goodwill is strained now. Boats sent down to <strong>Pacuare Falls</strong> have stopped coming back, and with them some of the hamlet's own sons and daughters. The elders want the river made safe again &mdash; and they will offer what little they have to anyone willing to find out what waits downstream.</p>"
+          },
+          "sort": 100000,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {}
+        },
+        {
+          "_id": "PgOurPacuareGMno",
+          "name": "GM Notes",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<h2>The hub &amp; the Keep</h2><p>Our Pacuare is the party's home base and the <strong>Keep</strong> in Automate FVTT terms &mdash; the settlement whose economy ticks forward over time. It is also the <strong>gathering site</strong>: this scene carries the <code>gathering-river</code> role flag, and it's the canvas on which you author the Fabricate gathering environment, task, and resource nodes (see <em>docs/GATHERING.md</em>). \"Fish the River\" and \"Gather Reeds\" are the intended tasks; their yield lands in the Keep stockpile.</p><h2>Hooks</h2><ul><li>Missing boats and missing villagers downstream &mdash; the core quest that points the party toward Pacuare Falls.</li><li>An elder or fishmonger who can explain the failing trade and reward the party from the hamlet's stores.</li><li>A chance to earn standing by helping with the catch before the trouble is even named &mdash; lean on the gathering loop here.</li></ul><p>Swap the placeholder background for a hamlet battle map when ready; the scene links here via its <em>Journal Entry</em> field.</p>"
+          },
+          "sort": 200000,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {}
+        }
+      ],
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "JrnPacuareFalls0",
+      "name": "Pacuare Falls",
+      "pages": [
+        {
+          "_id": "PgPacuareFallsOv",
+          "name": "Overview",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p>Where the gorge river finally throws itself off the highland, it falls in a long white roar into a churning pool, and around that pool clings the trading village of <strong>Pacuare Falls</strong>. Spray drifts over its roofs day and night. This is a working place: boats from above are unloaded at the head of the cataract, cargo is carried down the slick portage stair, and reloaded onto lowland craft below. Everything that moves through the gorge passes across these docks, and the village lives on the toll of handling it.</p><p>It is busier and harder-edged than Our Pacuare &mdash; warehouses, a tavern, a factor who keeps the ledgers, porters for hire, and travelers passing through with stories from down-country. On a good year it hums.</p><p>This is not a good year. The portage has become a place where things vanish, the factor's prices have turned strange, and the porters speak carefully, with their eyes down. Whatever has its grip on the gorge, it has its grip tightest <em>here</em>.</p>"
+          },
+          "sort": 100000,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {}
+        },
+        {
+          "_id": "PgPacuareFallsGM",
+          "name": "GM Notes",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<h2>The bandits' grip</h2><p>Pacuare Falls is where the adventure comes to a head. The bandits work the portage around the falls &mdash; the one stretch every shipment must cross on foot &mdash; skimming cargo and intimidating the porters. Someone in the village is either cooperating with them or too frightened to resist: the <strong>factor</strong> who keeps the trade ledgers is the natural candidate (coerced, complicit, or simply paying protection). Decide which as the table's investigation unfolds.</p><h2>Beats</h2><ul><li>Arrival contrasts sharply with Our Pacuare &mdash; wary villagers, inflated prices, a tavern where talk dies when strangers enter.</li><li>The portage stair and the pool below the falls are strong encounter sites for a 1st-level fight or chase.</li><li>The bandit camp lies just off the portage; resolving it reopens the river and restores trade (and the Keep's gathering yield upstream).</li></ul><p>Replace the placeholder background with a village/falls map when art is ready; this scene links here via its <em>Journal Entry</em> field.</p>"
+          },
+          "sort": 200000,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {}
+        }
+      ],
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    },
+    {
+      "_id": "JrnPacuareGorge1",
+      "name": "Pacuare Gorge",
+      "pages": [
+        {
+          "_id": "PgPacuareGorgeOv",
+          "name": "Overview",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<p>The <strong>Pacuare Gorge</strong> is a deep, green-walled canyon where the Pacuare River cuts through rainforest highland on its way to the lowlands. Mist hangs in the canopy, howler monkeys call from the ridgelines, and the river is the only road: everything and everyone moves by boat or along the muddy portage trails that cling to the gorge walls.</p><p>Two settlements bracket the gorge. Upstream, where the water runs calm and wide, sits the fishing hamlet of <strong>Our Pacuare</strong> &mdash; a knot of stilt houses and drying racks whose people live off the river's fish and reeds. Downstream the river gathers speed and plunges over the <strong>Pacuare Falls</strong>, and at the foot of that cataract stands the trading village of the same name, where river goods are hauled around the drop and bartered onward.</p><p>For as long as anyone remembers, boats and porters have passed freely between the two. Lately they have not. Cargo goes missing on the portage, boats put out from Our Pacuare and never reach the Falls, and the price of everything has crept upward. The river, the villagers say, has grown <em>teeth</em>.</p>"
+          },
+          "sort": 100000,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {}
+        },
+        {
+          "_id": "PgPacuareGorgeGM",
+          "name": "GM Notes",
+          "type": "text",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "text": {
+            "format": 1,
+            "content": "<h2>Running the Gorge</h2><p>The gorge is the adventure's spine. Use this <em>Pacuare Gorge</em> scene as the regional overview &mdash; a travel map linking the two playable locations. The party will typically start in <strong>Our Pacuare</strong> (the fishing hamlet, and the Keep / gathering site) and work downstream toward <strong>Pacuare Falls</strong> (the trading village), where the trouble is worst.</p><h2>The trouble</h2><p>A band of river bandits has set up between the settlements, preying on the portage trail and the calmer pools above the falls. They are organized enough to choke trade but not strong enough to hold a village outright &mdash; a fitting threat for 1st-level characters. Their pressure on the river economy is what the players can feel mechanically through the Keep at Our Pacuare: gathered yield and trade thin out while the bandits operate.</p><p>Replace the placeholder background with a regional/gorge map when art is ready; the scene is wired to this journal via its <em>Journal Entry</em> link.</p>"
+          },
+          "sort": 200000,
+          "ownership": {
+            "default": -1
+          },
+          "flags": {}
+        }
+      ],
+      "ownership": {
+        "default": 0
+      },
+      "flags": {}
+    }
+  ],
   "scenes": [
     {
       "_id": "AcdhMwcg4PdbjpV1",
@@ -34,6 +173,93 @@
       "flags": {
         "bandits-on-the-river": {
           "role": "title-splash"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "ScnOurPacuare000",
+      "name": "Our Pacuare",
+      "navigation": true,
+      "navName": "Our Pacuare",
+      "background": {
+        "src": "modules/bandits-on-the-river/assets/cover.webp"
+      },
+      "width": 1536,
+      "height": 1024,
+      "padding": 0.25,
+      "backgroundColor": "#0a0f10",
+      "grid": {
+        "type": 1,
+        "size": 100,
+        "distance": 5,
+        "units": "ft"
+      },
+      "tokenVision": false,
+      "journal": "JrnOurPacuare000",
+      "flags": {
+        "bandits-on-the-river": {
+          "role": "gathering-river"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "ScnPacuareFalls0",
+      "name": "Pacuare Falls",
+      "navigation": true,
+      "navName": "Pacuare Falls",
+      "background": {
+        "src": "modules/bandits-on-the-river/assets/cover.webp"
+      },
+      "width": 1536,
+      "height": 1024,
+      "padding": 0.25,
+      "backgroundColor": "#0f0c08",
+      "grid": {
+        "type": 1,
+        "size": 100,
+        "distance": 5,
+        "units": "ft"
+      },
+      "tokenVision": false,
+      "journal": "JrnPacuareFalls0",
+      "flags": {
+        "bandits-on-the-river": {
+          "role": "trading-village"
+        }
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "ScnPacuareGorge1",
+      "name": "Pacuare Gorge",
+      "navigation": true,
+      "navName": "Gorge",
+      "background": {
+        "src": "modules/bandits-on-the-river/assets/cover.webp"
+      },
+      "width": 1536,
+      "height": 1024,
+      "padding": 0.25,
+      "backgroundColor": "#0d0f0a",
+      "grid": {
+        "type": 0,
+        "size": 100,
+        "distance": 1,
+        "units": "mi"
+      },
+      "tokenVision": false,
+      "journal": "JrnPacuareGorge1",
+      "flags": {
+        "bandits-on-the-river": {
+          "role": "region-overview"
         }
       },
       "ownership": {
